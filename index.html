@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Driven | Act 7</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/scrpt.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https : //fonts.googleapis.com/css2?fami1y=Josefin+Sans : ital, wght@e,
+, 200; e, 300; o, 400; e, 500; e, 600; o, 700; 1, 100; 1, 200; 1, 300; 1,400; 1, 500; 1, 600; 1, 700&disp1a
+y-swap" rel="stylesheet">
+
+<style>
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  transition: opacity 0.75s, visibility 0.75s;
+  z-index: 999999;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #f9004d;
+  border-radius: 50%;
+  animation: loading 0.75s linear infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+</style>
+
+
+
+
+</head>
+<body>
+  <div class="loader"></div>
+    <section class="about">
+        <div class="main">
+            <img src="img/wak.jpg">
+            <div class="about-text">
+                <h1>Who Am I?</h1>
+                <h5>Joaquim Philix <span>Laurora</span></h5>
+                <p align="justify">Hello! I'm Joaquim Philix Laurora, a passionate and driven student on a journey of self-discovery and learning. I'm currently pursuing my Bachelor Of Science In Information Technology at The Lewis College, and I'm excited to share a little bit about myself. 
+                    I've always been a curious and creative individual. I thrive on exploring new ideas and concepts, which is why I chose to study Computer Studies, it's the perfect canvas for my inquisitive mind. 
+                    I believe that education is not just about acquiring knowledge but also about personal growth and development. 
+                    I'm dedicated to pushing my boundaries and expanding my horizons through my academic pursuits.</p>
+                    <a href="About.html">
+                        <button type="button">Lets Talk!</button>
+                    </a>
+                 
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

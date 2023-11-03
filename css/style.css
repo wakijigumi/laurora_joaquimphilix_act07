@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.about{
+    width: 100%;
+    padding: 300px 0px;
+    background-color: #191919;
+}
+
+.about img{
+    height: auto;
+    width: 420px;
+}
+.about-text{
+    width: 550px;
+}
+
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+   
+}
+
+span{
+    color: #f9004d;
+
+}
+
+.about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+button{
+    background: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+button:hover{
+    background: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+
+
+.about ul {
+    list-style: none; /* Remove default bullet points */
+    padding-left: 30px; /* Add some left padding to the list */
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.about li {
+    color: white; /* Set the text color to white */
+    font-size: 20px; /* Adjust the font size as needed */
+    padding-left: 0;
+}
+
+/* Use a custom bullet image or character */
+.about ul li::before {
+    content: "•"; /* Use a custom bullet character, e.g., a solid circle */
+    color: #f9004d; /* Set the bullet color to match your palette */
+    font-size: 24px; /* Adjust the bullet size */
+    margin-right: 10px; /* Add spacing between the bullet and text */
+    display: inline-block; /* Display the bullet inline with text */
+    width: 1em; /* Adjust the width of the bullet element */
+    text-align: center; /* Center the bullet element */
+    margin-left: -45px; /* Move the list to the left a little */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-link {
+    background: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.back-link:hover {
+    background: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+.content {
+    /* Your existing content styles go here */
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .about {
+        padding: 120px 0; /* Adjust the padding for smaller screens */
+    }
+
+    .about img {
+        width: 100%; /* Make the image responsive */
+        max-width: 100%; /* Set a max-width for the image */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .about-text {
+        width: 100%; /* Take full width on smaller screens */
+        text-align: center; /* Center the text */
+        padding: 10px; /* Add some padding for smaller screens */
+    }
+
+    .main {
+        width: 100%;
+        max-width: 100%; /* Take full width on smaller screens */
+        margin: 0;
+        display: block; /* Change to block for smaller screens */
+    }
+
+    .about-text h1 {
+        font-size: 40px; /* Adjust the font size for smaller screens */
+    }
+
+    .about-text h5 {
+        font-size: 18px; /* Adjust the font size for smaller screens */
+    }
+
+    .about-text p {
+        font-size: 8.5px; /* Adjust the font size for smaller screens */
+    }
+
+    button {
+        padding: 10px 20px; /* Adjust the padding for smaller screens */
+        border-radius: 20px; /* Adjust the border radius for smaller screens */
+        display: block; /* Change to block for smaller screens */
+        margin: 0 auto; /* Center the button */
+    }
+    .about ul {
+        display: flex; /* Use flexbox for list items */
+        flex-direction: column; /* Stack list items vertically */
+        align-items: flex-start; /* Align items to the start of the container */
+        padding-left: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .about li {
+        font-size: 13px; /* Adjust the font size for smaller screens */
+        display: flex; /* Use flexbox for list items */
+        align-items: center; /* Center content vertically in list items */
+    }
+
+    .about ul li::before {
+        content: "•"; /* Use a custom bullet character, e.g., a solid circle */
+        color: #f9004d; /* Set the bullet color to match your palette */
+        font-size: 24px; /* Adjust the bullet size */
+        margin-right: 10px; /* Add spacing between the bullet and text */
+        display: inline-block; /* Display the bullet inline with text */
+        width: 1em; /* Adjust the width of the bullet element */
+        text-align: center; /* Center the bullet element */
+        margin-left: 0px; /* Move the list to the left a little */
+    }
+    
+
+    .back-button {
+        position: absolute;
+        top: 75px;
+        left: 10px;
+    }
+    
+    .back-link {
+        background: #f9004d;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 20px;
+        transition: .4s;
+    }
+    
+    .back-link:hover {
+        background: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
+    }
+    
+   
+}
+
+

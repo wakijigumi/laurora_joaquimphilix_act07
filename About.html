@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Driven | Act 7</title>
+    <script src="js/scrpt.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https : //fonts.googleapis.com/css2?fami1y=Josefin+Sans : ital, wght@e,
+, 200; e, 300; o, 400; e, 500; e, 600; o, 700; 1, 100; 1, 200; 1, 300; 1,400; 1, 500; 1, 600; 1, 700&disp1a
+y-swap" rel="stylesheet">
+
+<style>
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    transition: opacity 0.75s, visibility 0.75s;
+    z-index: 999999;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #f9004d;
+    border-radius: 50%;
+    animation: loading 0.75s linear infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  </style>
+
+
+</head>
+<body>
+  <div class="loader"></div>
+    <section class="about">
+        <div class="main">
+            <img src="img/wak.jpg">
+            <div class="about-text">
+                <h1>About <span>Me</span></h1>
+                <ul>
+                    <li>Name: Joaquim Philix De Vera Laurora</li>
+                    <li>Age: 22</li>
+                    <li>Relationship: Single but ready to mingle</li>
+                    <li>Address: 9TH Street OLV Bibincahan Sor City</li>
+                    <li>Education: The Lewis College</li>
+                    <li>Birthdate: June 29, 2001</li>
+                    <li>Gender: Male</li>
+                    <li>Contact: 09091231231</li>
+                </ul>
+                    <br>
+                    <a href="https://www.facebook.com/JoaquimPhilix">
+                        <button type="button">Contact | Me!</button>
+                    </a>
+                    <div class="back-button">
+                        <a href="index.html" class="back-link">Back</a>
+                 
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
